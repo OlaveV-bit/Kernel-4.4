@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 版权所有 (c) 2026 OlaveV
+# 版权所有 (c) 2026 OlaveV-bit
 #
 # 文件名：diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
