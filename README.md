@@ -7,6 +7,8 @@
 
 感谢大佬 sdf8057 的贡献 https://github.com/sdf8057/ipq6000
 
+感谢大佬 lazyoop 的贡献 https://github.com/lazyoop/ipq6000
+
 感谢大佬 openwrt-fork 的贡献 https://github.com/openwrt-fork/zn-m2-openwrt-build
 
 控制台地址`192.168.1.1` 默认密码`password`
