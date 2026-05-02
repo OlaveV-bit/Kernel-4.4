@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (c) 2026 OlaveV
+# Copyright (c) 2026 OlaveV-bit
 #
 # File name: diy-part3.sh
 # Description: OpenWrt DIY script part 3 (After Install feeds)
