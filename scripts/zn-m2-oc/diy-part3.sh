@@ -12,8 +12,7 @@
 # 修改固件版本信息，加入编译日期
 sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='OpenWrt IPQ6000 ZN-M2 (build time: $(date +%Y%m%d))'/g" package/base-files/files/etc/openwrt_release
 
-# 【核心修复】替换 golang 版本为更稳健的 22.x
-# 之前的 25.x 可能导致 clash-meta 等 Go 插件编译静默失败
+# 替换 golang 版本为更稳健的 22.x
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 
