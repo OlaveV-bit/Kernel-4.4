@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# 版权所有 (c) 2026 OlaveV
+#
+# 文件名：diy-part3.sh
+# Description: OpenWrt DIY script part 3 (After Install feeds)
+#
+
+# Modify default IP
+#sed -i 's/192.168.1.1/192.168.100.1/g' package/base-files/files/bin/config_generate
+
+#修改版本信息
+sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='OpenWrt IPQ6000 ZN-M2 (build time: $(date +%Y%m%d))'/g"  package/base-files/files/etc/openwrt_release
+
+# 替换golang版本为1.26
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
+
+# design修改proxy链接
+sed -i -r "s#navbar_proxy = 'openclash'#navbar_proxy = 'passwall'#g" feeds/luci/themes/luci-theme-design/luasrc/view/themes/design/header.htm
