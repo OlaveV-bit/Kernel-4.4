@@ -21,7 +21,7 @@ env:
   DIY_P3_SH: ./scripts/zn-m2-oc/diy-part3.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_RELEASE: true
-  TZ: Asia/Shanghai
+TZ: Asia/Shanghai
 
 jobs:
   build:
@@ -54,7 +54,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         curl -s https://raw.githubusercontent.com/immortalwrt/build-scripts/master/init_build_environment.sh | sudo bash
-        sudo apt-get install -y rename pigz libfuse-dev upx subversion clang
+        sudo apt-get install -y rename pigz libfuse-dev upx subversion clang lua5.1 liblua5.1-0-dev
         sudo apt-get autoremove -y --purge
         sudo apt-get clean
         sudo rm -rf po2lmo
