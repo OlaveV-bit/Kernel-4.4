@@ -21,7 +21,7 @@ env:
   DIY_P3_SH: ./scripts/zn-m2-oc/diy-part3.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_RELEASE: true
-TZ: Asia/Shanghai
+  TZ: Asia/Shanghai
 
 jobs:
   build:
