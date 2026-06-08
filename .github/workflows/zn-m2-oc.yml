@@ -1,13 +1,5 @@
 #
-# https://github.com/P3TERX/Actions-OpenWrt
-#
-# File: .github/workflows/openwrt-bulder.yml
-# Description: Build OpenWrt using GitHub Actions
-#
-# Copyright (c) 2019-2024 P3TERX <https://p3terx.com>
-#
-# This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
+# Copyright (c) 2026 OlaveV-bit
 #
 
 name: zn-m2-oc build
@@ -20,7 +12,7 @@ permissions:
   actions: write
 
 env:
-  REPO_URL: https://github.com/openwrt-fork/sdf8057-ipq6000.git
+  REPO_URL: https://github.com/OlaveV-bit/sdf8057-ipq6000.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/zn-m2-oc.config
