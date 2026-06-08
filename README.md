@@ -3,7 +3,7 @@
 
 带有OpenClash适合改过内存使用。
 
-带有PassWall适合未改内存使用。
+带有passwall适合未改内存使用。
 
 感谢大佬 sdf8057 的贡献 https://github.com/sdf8057/ipq6000
 
