@@ -1,4 +1,4 @@
-# 兆能ZN-M2 OpenWRT 无wifi 无USB 弱电箱专用
+# OpenWRT 无wifi 无USB 弱电箱专用
 自用款固件 弱电箱专用 内核版本 4.4.60 不支持wifi和USB
 
 带有OpenClash适合改过内存使用。
