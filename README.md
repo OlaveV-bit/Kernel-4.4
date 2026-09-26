@@ -1,16 +1,21 @@
-# OpenWRT 无wifi 无USB 弱电箱专用
-自用款固件 弱电箱专用 内核版本 4.4.60 不支持wifi和USB
+# 兆能 ZN-M2 OpenWrt 固件
 
-带有OpenClash适合改过内存使用。
+无 WiFi / 无 USB / 弱电箱专用 · 内核 4.4.60 · 推荐内存 512M+
 
-带有PassWall适合未改内存使用。
+## 刷机 & 升级
 
-感谢大佬 sdf8057 的贡献 https://github.com/sdf8057/ipq6000
+- 控制台：`192.168.1.1` · 默认密码：`password`
 
-感谢大佬 openwrt-fork 的贡献 https://github.com/openwrt-fork/zn-m2-openwrt-build
+| 场景 | 文件 |
+|------|------|
+| uboot 刷机 | `*factory-basic.ubi` |
+| 系统升级 | `*sysupgrade-basic.bin` |
+| 软件包清单 | `*basic.manifest` |
 
-控制台地址`192.168.1.1` 默认密码`password`
+---
 
-uboot刷机用`openwrt-ipq60xx-generic-zn_m2-squashfs-nand-factory.ubi`
+## 手动构建
 
-openwrt系统升级用`openwrt-ipq60xx-generic-zn_m2-squashfs-nand-sysupgrade.bin`
+1. Fork 本仓库
+2. 在 Actions 页面选择 `zn-m2 build` → `Run workflow`
+3. 等待约 2-3 小时，构建产物自动发布到 Release
